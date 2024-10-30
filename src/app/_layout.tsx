@@ -33,7 +33,13 @@ export default function RootLayout() {
     }
     return (
         <Stack>
-            <Stack.Screen name={'index'} options={{headerShown: false}} />
+            <Stack.Screen name={'index'} options={{
+                headerShown: false,
+            }} />
+            <Stack.Screen name={'games'} options={{
+                headerTitle: 'Games',
+                headerTintColor: '#161622',
+            }} />
         </Stack>
     );
 }
