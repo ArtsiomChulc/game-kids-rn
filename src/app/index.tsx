@@ -1,14 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import {StatusBar} from 'expo-status-bar';
+import {ScrollView, TouchableOpacity, View} from 'react-native';
+import {SafeAreaView} from "react-native-safe-area-context";
+import {Link} from "expo-router";
 import '../../global.css';
 
-export default function Index() {
-  return (
-    <View className='flex-1 bg-cyan-800 items-center justify-center'>
-      <Text className='text-6xl text-white'>Open up App.tsx to start working on your app!</Text>
-      <Text className='text-2xl color-black'>Open up App</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default function App() {
+    return (
+        <SafeAreaView className='bg-primary h-full'>
+            <ScrollView contentContainerStyle={{flexGrow: 1}}>
+                <View className='flex-1 items-centers justify-center'>
+                    <TouchableOpacity>
+                        <Link href={'games'}>
+                            Go to games
+                        </Link>
+                    </TouchableOpacity>
+                </View>
+            </ScrollView>
+            <StatusBar backgroundColor="#161622" style="light" />
+        </SafeAreaView>
+    );
 }
 
