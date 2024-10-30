@@ -11,7 +11,7 @@ export default function Index() {
             <ScrollView contentContainerStyle={{flexGrow: 1}}>
                 <View
                     className='justify-center items-center gap-6 p-2'>
-                    <CardScreen src={images.animalsScreen}/>
+                    <CardScreen cardTitle={"Отгадай животное"} src={images.animalsScreen}/>
                     <CardScreen src={images.animalsScreen}/>
                     <CardScreen src={images.animalsScreen}/>
                     <CardScreen src={images.animalsScreen}/>

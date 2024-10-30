@@ -38,8 +38,11 @@ export default function RootLayout() {
             }} />
             <Stack.Screen name={'games'} options={{
                 headerTitle: 'Games',
-                headerTintColor: '#161622',
-            }} />
+                headerTintColor: '#161622', // Цвет текста заголовка
+                headerStyle: {
+                    backgroundColor: '#f5f5f5', // Цвет фона заголовка
+                },
+            }}  />
         </Stack>
     );
 }
