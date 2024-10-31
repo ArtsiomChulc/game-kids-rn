@@ -6,12 +6,13 @@ import {StatusBar} from "expo-status-bar";
 
 
 export default function Index() {
+
     return (
         <SafeAreaView className='bg-primary h-full w-full'>
             <ScrollView contentContainerStyle={{flexGrow: 1}}>
-                <View
-                    className='justify-center items-center gap-6 p-2'>
-                    <CardScreen cardTitle={"Отгадай животное"} src={images.animalsScreen}/>
+                <View className='justify-center items-center gap-6 p-2'>
+                    <CardScreen cardTitle={"Отгадай животное"} src={images.animalsScreen}
+                                path={'/find-animals'}/>
                     <CardScreen src={images.animalsScreen}/>
                     <CardScreen src={images.animalsScreen}/>
                     <CardScreen src={images.animalsScreen}/>
