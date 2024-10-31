@@ -15,9 +15,13 @@ export default function CardScreen({src, cardTitle}: Props) {
                     resizeMode={'cover'}
                     className='w-full h-full object-cover rounded-[20px]'
                 />
-                <Text className='font-bold text-fuchsia-950 text-4xl z-10 p-3 absolute flex items-center justify-center'>
-                    {cardTitle}
-                </Text>
+                {cardTitle && (
+                    <View className='absolute z-10 flex rounded-xl bg-white/20 p-3'>
+                        <Text className='font-bold text-fuchsia-950 text-4xl p-3'>
+                            {cardTitle}
+                        </Text>
+                    </View>
+                )}
             </View>
         </TouchableOpacity>
     );
